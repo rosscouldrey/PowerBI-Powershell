@@ -175,7 +175,7 @@ $dashboards
 
 #write datasets file
 $datasets
-    | Select-Object -Property DatasetID, DatasetName, ConfiguredBy, DefaultRetentionPolicy, AddRowsApiEnabled, Tables, WebUrl, Relationships, Datasources, DefaultMode,IsRefreshable, IsEffectiveIdentityRequired, IsEffectiveIdentityRolesRequired, IsOnPremGatewayRequired, TargetStorageMode
+    | Select-Object -Property Workspace_ID, DatasetID, DatasetName, ConfiguredBy, DefaultRetentionPolicy, AddRowsApiEnabled, Tables, WebUrl, Relationships, Datasources, DefaultMode,IsRefreshable, IsEffectiveIdentityRequired, IsEffectiveIdentityRolesRequired, IsOnPremGatewayRequired, TargetStorageMode
     | Export-Csv -Path $datasetFilePath -NoTypeInformation
 
 $dataflows
